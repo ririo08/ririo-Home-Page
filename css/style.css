@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+body {
+    margin: auto;
+    max-width: 1000px;
+}
+
+header {
+    margin: auto;
+    width: 500px;
+    position: relative;
+    z-index: 10000;
+}
+
+.toptitle {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.zisaku {
+    display: block;
+    width: 76px;
+    height: 56px;
+    background-image: url(../img/hukidasi.png);
+    text-align: center;
+    line-height: 2.7;
+    position: absolute;
+    top: 5px;
+    left: 140px;
+    font-size: 20px;
+}
+
+/* main */
+
+main {
+    z-index: 10000;
+}
+
+.mainflex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.mainHead {
+    width: 400px;
+    border-bottom: 3px solid orange;
+}
+
+.mainHead h2 {
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.playtitle {
+    padding-left: 20px;
+}
+
+.playtitle a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding-right: 15px;
+}
+
+.playtitle a:hover {
+    color: orange;
+}
+
+.playtitle dt {
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.playtitle dt:first-child {
+    padding-top: 0;
+}
+
+.futuretitle ul li {
+    padding-bottom: 5px;
+}
+
+.nasi {
+    text-decoration: line-through !important;
+}
+
+script {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
