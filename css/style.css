@@ -3,6 +3,7 @@
 body {
     margin: auto;
     max-width: 1000px;
+    font-family: 'Noto Sans JP';
 }
 
 header {
@@ -17,6 +18,7 @@ header {
     margin-top: 0;
     padding-top: 60px;
     text-align: center;
+    font-weight: bold;
 }
 
 .zisaku {
@@ -28,7 +30,7 @@ header {
     line-height: 2.7;
     position: absolute;
     top: 5px;
-    left: 140px;
+    left: 165px;
     font-size: 20px;
 }
 
@@ -44,14 +46,18 @@ main {
     justify-content: space-around;
 }
 
+.section {
+    padding-bottom: 20px;
+}
+
 .mainHead {
     width: 400px;
     border-bottom: 3px solid orange;
 }
 
 .mainHead h2 {
-    margin-bottom: 5px;
-    font-size: 20px;
+    font-size: 1.4rem;
+    font-weight: bold;
 }
 
 .playtitle {
@@ -70,12 +76,23 @@ main {
 }
 
 .playtitle dt {
+    font-size: 1.1rem;
     padding-top: 15px;
     padding-bottom: 5px;
+    font-weight: normal;
 }
 
-.playtitle dt:first-child {
-    padding-top: 0;
+.playtitle dd {
+    padding-left: 30px;
+    font-size: 1.1rem;
+}
+
+.playtitle dd a {
+    padding-left: 10px;
+}
+
+.futuretitle ul {
+    padding-top: 20px;
 }
 
 .futuretitle ul li {
@@ -86,14 +103,15 @@ main {
     text-decoration: line-through !important;
 }
 
-script {
-    position: absolute !important;
-    clip: rect(1px 1px 1px 1px);
-    /* IE6, IE7 */
-    clip: rect(1px, 1px, 1px, 1px);
-    padding: 0 !important;
-    border: 0 !important;
-    height: 1px !important;
-    width: 1px !important;
-    overflow: hidden;
+
+/* ここからplayedgamelist */
+
+.playedgamelist-main {
+    margin: auto;
+    padding-top: 20px;
+}
+
+.playedgamelist-title {
+    text-align: center;
+    border-bottom: 3px solid orange;
 }
