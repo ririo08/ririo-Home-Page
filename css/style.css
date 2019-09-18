@@ -21,6 +21,11 @@ header {
     font-weight: bold;
 }
 
+.toptitle a {
+    text-decoration: none;
+    color: black;
+}
+
 .zisaku {
     display: block;
     width: 76px;
@@ -113,5 +118,34 @@ main {
 
 .playedgamelist-title {
     text-align: center;
+    padding-bottom: 8px;
     border-bottom: 3px solid orange;
+}
+
+.playedgamelist-entrylist {
+    font-weight: bold;
+    max-width: 800px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.playedgamelist-entrylist p {
+    font-weight: normal;
+}
+
+.listTable-links {
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+
+.youlink a:hover {
+    color: #FF0000;
+}
+
+.twilink a:hover {
+    color: #6441A4;
+}
+
+.listTable-remarks {
+    display: inline;
 }
