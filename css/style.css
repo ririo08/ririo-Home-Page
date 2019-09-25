@@ -45,7 +45,7 @@ header {
         width: 300px;
     }
     .toptitle {
-        font-size: 30px;
+        font-size: 28px;
     }
     .zisaku {
         left: 70px;
@@ -161,9 +161,10 @@ main {
     padding-top: 30px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 479px) {
     .playgamelist-flex {
-        flex-direction: row-reverse;
+        padding-top: 0;
+        flex-direction: column-reverse;
     }
 }
 
@@ -175,8 +176,8 @@ main {
 }
 
 .playgamelist-flex_iframe iframe {
-    width: 400px;
-    height: 800px;
+    max-width: 400px;
+    min-height: 200px;
 }
 
 .playedgamelist-entrylist p {
