@@ -176,8 +176,15 @@ main {
 }
 
 .playgamelist-flex_iframe iframe {
+    padding-left: 10px;
     max-width: 400px;
-    min-height: 200px;
+    height: 100%;
+}
+
+@media screen and (max-width: 479px) {
+    .playgamelist-flex_iframe iframe {
+    height: 300px;
+    }
 }
 
 .playedgamelist-entrylist p {
