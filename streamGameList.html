@@ -9,6 +9,14 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148524394-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-148524394-1');
+    </script>
 </head>
 
 <body>
@@ -29,13 +37,14 @@
             配信が残ってない（公開していないものも含む）、かつ編集した動画がある場合はそちらを表示しています。<br>
             P.S.Twitchに残ってないものもあります。てかそっちのほうが多いです。逆もまた然り。</p>
         </div>
-        <div class="playedgamelist-entrylist">
-            <p>0-1 A-Z あ-ん順で並べています。</p>
+        <div class="playgamelist-flex">
+            <div class="playedgamelist-entrylist">
+                <p>0-1 A-Z あ-ん順で並べています。</p>
 
             <dt class="listTable-title">Deltarune</dt>
-            <dd class="listTable-links twilink"><a href="https://www.twitch.tv/collections/qPBk1XRCYxWhbA" target="_blank">Twitch</a></dd>
+            <dd class="listTable-links twilink"><a href="./streamGameList/Deltarune.html" target="piframe">Twitch</a></dd>
             <dt class="listTable-title">Destiny Child</dt>
-            <dd class="listTable-links youlink"><a href="https://www.youtube.com/playlist?list=PLwQLZEoAUfGi7iyGcRxEYXOIu8dQzRlnk" target="_blank">YouTube</a></dd>
+            <dd class="listTable-links youlink"><a href="./streamGameList/DestinyChild.html" target="piframe">YouTube</a></dd>
             <dt class="listTable-title">FINAL FANTASY XV WINDOWS EDITION</dt>
             <dd class="listTable-links twilink"><a href="https://www.twitch.tv/collections/JYdQgOfwXBUdWg" target="_blank">Twitch</a></dd>
             <dt class="listTable-title">Half-Life <p class="listTable-remarks">(一回目が抜けています。）</p></dt>
@@ -74,12 +83,20 @@
             <dd class="listTable-links twilink"><a href="https://www.twitch.tv/collections/FerQB8apZxWfAA" target="_blank">Twitch</a></dd>
             <dt class="listTable-title">ロックマン11 体験版</dt>
             <dd class="listTable-links twilink"><a href="https://www.twitch.tv/videos/307038817" target="_blank">Twitch</a></dd>
-            <!-- 
+                <!-- 
                         <dt class="listTable-title"></dt>
                         <dd class="listTable-links"><a href="" target="_blank">Twitch</a></dd>
-            .-->
+                .-->
+            </div>
+            <div class="playgamelist-flex_iframe">
+                <iframe id="iframe" src="" frameborder="0" name="piframe"></iframe>
+            </div>
         </div>
     </main>
     <script src="./javascript/randomurl.js"></script>
+    <!-- <script src="./javascript/streamgamelist-iframe.js"></script> -->
+    <footer>
+        <small>@リリオ 2019</small>
+    </footer>
 </body>
 </html>

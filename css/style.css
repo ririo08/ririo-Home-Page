@@ -145,18 +145,32 @@ main {
     padding-top: 20px;
 }
 
+.playedgamelist-main p {
+    font-size: 14px;
+}
+
 .playedgamelist-title {
     text-align: center;
     padding-bottom: 8px;
     border-bottom: 3px solid orange;
 }
 
+.playgamelist-flex {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
 .playedgamelist-entrylist {
     font-weight: bold;
     max-width: 800px;
     margin: auto;
-    padding-top: 30px;
     padding-left: 5px;
+}
+
+.playgamelist-flex_iframe iframe {
+    width: 400px;
+    height: 800px;
 }
 
 .playedgamelist-entrylist p {
