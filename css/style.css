@@ -161,6 +161,12 @@ main {
     padding-top: 30px;
 }
 
+@media screen and (max-width: 700px) {
+    .playgamelist-flex {
+        flex-direction: row-reverse;
+    }
+}
+
 .playedgamelist-entrylist {
     font-weight: bold;
     max-width: 800px;
