@@ -159,6 +159,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     padding-top: 30px;
+    margin: auto;
 }
 
 @media screen and (max-width: 479px) {
@@ -166,19 +167,22 @@ main {
         padding-top: 0;
         flex-direction: column-reverse;
     }
+
+    .playgamelist-flex_iframe iframe {
+        width: 100%;
+    }
 }
 
 .playedgamelist-entrylist {
     font-weight: bold;
     max-width: 800px;
-    margin: auto;
     padding-left: 5px;
 }
 
 .playgamelist-flex_iframe iframe {
     padding-left: 10px;
-    max-width: 400px;
     height: 100%;
+    /* border: #000 solid 1px; */
 }
 
 @media screen and (max-width: 479px) {
@@ -202,6 +206,10 @@ main {
 
 .twilink a:hover {
     color: #6441A4;
+}
+
+.Detailink a:hover {
+    color: orange;
 }
 
 .listTable-remarks {

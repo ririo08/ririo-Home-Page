@@ -9,3 +9,8 @@ a {
 .twitch a:hover {
     color: #6441A4;
 }
+
+li {
+    font-size: 14px;
+    padding-bottom: 5px;
+}
