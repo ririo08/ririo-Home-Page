@@ -138,6 +138,20 @@ main {
 }
 
 
+/* ここからFooter */
+
+footer {
+    width:100px;
+    margin: auto;
+}
+
+small {
+    display: block;
+    margin-top: 50px;
+}
+
+
+
 /* ここからplayedgamelist */
 
 .playedgamelist-main {
