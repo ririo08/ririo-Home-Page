@@ -40,19 +40,6 @@ header {
     font-size: 20px;
 }
 
-@media screen and (max-width: 479px) {
-    header {
-        width: 300px;
-    }
-    .toptitle {
-        font-size: 28px;
-    }
-    .zisaku {
-        left: 70px;
-    }
-
-}
-
 /* main */
 
 main {
@@ -65,20 +52,8 @@ main {
     justify-content: space-around;
 }
 
-@media screen and (max-width: 479px) {
-    .mainflex1 {
-        padding-bottom: 50px;
-    }
-}
-
 .mainflex2 {
         width: 400px;
-}
-
-@media screen and (max-width: 479px) {
-    .mainflex2 {
-        width: 80%;
-    }
 }
 
 .section {
@@ -176,17 +151,6 @@ small {
     margin: auto;
 }
 
-@media screen and (max-width: 479px) {
-    .playgamelist-flex {
-        padding-top: 0;
-        flex-direction: column-reverse;
-    }
-
-    .playgamelist-flex_iframe iframe {
-        width: 100%;
-    }
-}
-
 .playedgamelist-entrylist {
     font-weight: bold;
     max-width: 800px;
@@ -197,12 +161,6 @@ small {
     padding-left: 10px;
     height: 100%;
     /* border: #000 solid 1px; */
-}
-
-@media screen and (max-width: 479px) {
-    .playgamelist-flex_iframe iframe {
-    height: 300px;
-    }
 }
 
 .playedgamelist-entrylist p {
