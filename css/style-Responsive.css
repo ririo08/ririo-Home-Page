@@ -1,4 +1,5 @@
 @media screen and (max-width: 900px) {
+
     .playgamelist-flex_iframe {
         width: 100%;
     }
@@ -6,6 +7,12 @@
     .playgamelist-flex_iframe iframe {
         width: 100%;
         height: 600px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mainflex1 {
+        margin-bottom: 100px;
     }
 }
 
@@ -20,10 +27,6 @@
 
     .zisaku {
         left: 70px;
-    }
-
-    .mainflex1 {
-        padding-bottom: 50px;
     }
 
     .mainflex2 {
