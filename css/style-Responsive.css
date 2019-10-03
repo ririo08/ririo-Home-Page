@@ -10,13 +10,22 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .mainflex1 {
         margin-bottom: 100px;
     }
-}
 
-@media screen and (max-width: 480px) {
+    .pcSpec-list {
+        display: block;
+        justify-content: normal;
+    }
+
+    .pcSpec-img {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+@media screen and (max-width: 479px) {
     header {
         width: 300px;
     }

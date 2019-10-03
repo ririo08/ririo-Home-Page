@@ -138,7 +138,7 @@ small {
     font-size: 14px;
 }
 
-.playedgamelist-title {
+.playedgamelist-title,.gTitle-h1 {
     text-align: center;
     padding-bottom: 8px;
     border-bottom: 3px solid orange;
@@ -186,4 +186,30 @@ small {
 
 .listTable-remarks {
     display: inline;
+}
+
+/* pcSpec */
+
+.pcSpec-list {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pcSpec-img {
+    width: 50%;
+}
+
+.pcSpec-img img {
+    width: 100%;
+}
+
+.pcSpec-description h2 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.pcSpec-description p {
+    font-size: 14px;
+    margin-bottom: 0.5rem;
 }
