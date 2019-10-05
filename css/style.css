@@ -216,6 +216,26 @@ small {
           justify-content: space-between;
 }
 
+.pcSpec-description {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.pcSpec-description_pc {
+  width: 50%;
+}
+
+.pcSpec-description h2 {
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.pcSpec-description p {
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+}
+
 .pcSpec-img {
   width: 50%;
 }
@@ -224,12 +244,34 @@ small {
   width: 100%;
 }
 
-.pcSpec-description h2 {
+/*! amazlet-css */
+.amazlet-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin-bottom: 50px;
+}
+
+.amazlet-info {
+  padding-left: 20px;
+}
+
+.amazlet-name {
   font-size: 16px;
+}
+
+.amazlet-name a {
+  color: #915500;
   font-weight: bold;
 }
 
-.pcSpec-description p {
+.amazlet-powered-date {
+  font-size: 12px;
+}
+
+.amazlet-detail {
   font-size: 14px;
-  margin-bottom: 0.5rem;
 }

@@ -18,6 +18,9 @@
         -ms-flex-pack: normal;
             justify-content: normal;
   }
+  .pcSpec-description {
+    width: 100%;
+  }
   .pcSpec-img {
     width: 100%;
     margin-top: 30px;
@@ -36,5 +39,11 @@
   }
   .mainflex2 {
     width: 80%;
+  }
+  .amazlet-box {
+    display: block;
+  }
+  .amazlet-info {
+    padding: 5px;
   }
 }

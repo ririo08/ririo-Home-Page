@@ -15,14 +15,20 @@
         margin-bottom: 100px;
     }
 
-    .pcSpec-list {
-        display: block;
-        justify-content: normal;
-    }
+    .pcSpec {
+        &-list {
+            display: block;
+            justify-content: normal;
+        }
 
-    .pcSpec-img {
-        width: 100%;
-        margin-top: 30px;
+        &-description {
+            width: 100%;
+        }
+
+        &-img {
+            width: 100%;
+            margin-top: 30px;
+        }
     }
 }
 
@@ -41,5 +47,14 @@
 
     .mainflex2 {
         width: 80%;
+    }
+
+    .amazlet {
+        &-box {
+            display: block;
+        }
+        &-info {
+            padding: 5px;
+        }
     }
 }
