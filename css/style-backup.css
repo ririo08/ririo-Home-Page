@@ -1,0 +1,226 @@
+@charset "utf-8";
+
+body {
+    margin: auto;
+    max-width: 1000px;
+    font-family: 'Noto Sans JP', sans-serif;
+    -webkit-text-size-adjust: 100％;
+}
+
+header {
+    margin: auto;
+    max-width: 500px;
+    position: relative;
+    z-index: 10000;
+}
+
+.toptitle {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 60px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.toptitle a {
+    text-decoration: none;
+    color: black;
+}
+
+.zisaku {
+    display: block;
+    width: 76px;
+    height: 56px;
+    background-image: url(../img/hukidasi.png);
+    text-align: center;
+    line-height: 2.7;
+    position: absolute;
+    top: 5px;
+    left: 165px;
+    font-size: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
+}
+
+nav ul li + li {
+    margin-left: 20px;
+}
+/* main */
+
+main {
+    z-index: 10000;
+}
+
+.mainflex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.mainflex2 {
+        width: 400px;
+}
+
+.section {
+    padding-bottom: 20px;
+}
+
+.mainHead {
+    border-bottom: 3px solid orange;
+}
+
+.mainHead h2 {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.playtitle {
+    padding-left: 20px;
+}
+
+.playtitle a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding-right: 15px;
+}
+
+.playtitle a:hover {
+    color: orange;
+}
+
+.playtitle dt {
+    font-size: 1.1rem;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    font-weight: normal;
+}
+
+.playtitle dd {
+    padding-left: 30px;
+    font-size: 1.1rem;
+}
+
+.playtitle dd a {
+    padding-left: 10px;
+}
+
+.futuretitle ul {
+    padding-top: 20px;
+}
+
+.futuretitle ul li {
+    padding-bottom: 5px;
+}
+
+.nasi {
+    text-decoration: line-through !important;
+}
+
+
+/* ここからFooter */
+
+footer {
+    width:100px;
+    margin: auto;
+}
+
+small {
+    display: block;
+    margin-top: 50px;
+}
+
+
+
+/* ここからplayedgamelist */
+
+.playedgamelist-main {
+    margin: auto;
+    padding-top: 20px;
+}
+
+.playedgamelist-main p {
+    font-size: 14px;
+}
+
+.playedgamelist-title,.gTitle-h1 {
+    text-align: center;
+    padding-bottom: 8px;
+    border-bottom: 3px solid orange;
+}
+
+.playgamelist-flex {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    margin: auto;
+}
+
+.playedgamelist-entrylist {
+    font-weight: bold;
+    max-width: 800px;
+    padding-left: 5px;
+}
+
+.playgamelist-flex_iframe iframe {
+    padding-left: 10px;
+    height: 100%;
+    /* border: #000 solid 1px; */
+}
+
+.playedgamelist-entrylist p {
+    font-weight: normal;
+}
+
+.listTable-links {
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+
+.youlink a:hover {
+    color: #FF0000;
+}
+
+.twilink a:hover {
+    color: #6441A4;
+}
+
+.Detailink a:hover {
+    color: orange;
+}
+
+.listTable-remarks {
+    display: inline;
+}
+
+/* pcSpec */
+
+.pcSpec-list {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pcSpec-img {
+    width: 50%;
+}
+
+.pcSpec-img img {
+    width: 100%;
+}
+
+.pcSpec-description h2 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.pcSpec-description p {
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+}
