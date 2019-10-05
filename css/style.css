@@ -56,6 +56,12 @@ nav ul li + li {
   margin-left: 20px;
 }
 
+.accessCounterBox {
+  text-align: center;
+  position: relative;
+  font-size: 14px;
+}
+
 /* main */
 main {
   z-index: 10000;

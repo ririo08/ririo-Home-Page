@@ -51,6 +51,14 @@ nav ul {
 nav ul li + li {
     margin-left: 20px;
 }
+
+.accessCounterBox {
+    position: absolute;
+    top: 3px;
+    right: 0;
+    font-size: 14px;
+}
+
 /* main */
 
 main {
