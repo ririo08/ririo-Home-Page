@@ -20,11 +20,11 @@ header {
     padding-top: 60px;
     text-align: center;
     font-weight: bold;
-}
 
-.toptitle a {
-    text-decoration: none;
-    color: black;
+    a {
+        text-decoration: none;
+        color: black;
+    }
 }
 
 .zisaku {
@@ -40,22 +40,23 @@ header {
     font-size: 20px;
 }
 
-nav ul {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    list-style: none;
-    padding-left: 0;
-}
+nav {
+    ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        list-style: none;
+        padding-left: 0;
 
-nav ul li + li {
-    margin-left: 20px;
+        li + li {
+            margin-left: 20px;
+        }
+    }
 }
 
 .accessCounterBox {
-    position: absolute;
-    top: 3px;
-    right: 0;
+    text-align: center;
+    position: relative;
     font-size: 14px;
 }
 
@@ -81,50 +82,52 @@ main {
 
 .mainHead {
     border-bottom: 3px solid orange;
-}
 
-.mainHead h2 {
-    font-size: 1.4rem;
-    font-weight: bold;
+    h2 {
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
 }
 
 .playtitle {
     padding-left: 20px;
+
+    a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        padding-right: 15px;
+
+        &:hover {
+            color: orange;
+        }
+    }
+
+    dt {
+        font-size: 1.1rem;
+        padding-top: 15px;
+        padding-bottom: 5px;
+        font-weight: normal;
+    }
+
+    dd {
+        padding-left: 30px;
+        font-size: 1.1rem;
+
+        a {
+            padding-left: 10px;
+        }
+    }
 }
 
-.playtitle a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    padding-right: 15px;
-}
+.futuretitle {
+    ul {
+        padding-top: 20px;
 
-.playtitle a:hover {
-    color: orange;
-}
-
-.playtitle dt {
-    font-size: 1.1rem;
-    padding-top: 15px;
-    padding-bottom: 5px;
-    font-weight: normal;
-}
-
-.playtitle dd {
-    padding-left: 30px;
-    font-size: 1.1rem;
-}
-
-.playtitle dd a {
-    padding-left: 10px;
-}
-
-.futuretitle ul {
-    padding-top: 20px;
-}
-
-.futuretitle ul li {
-    padding-bottom: 5px;
+        li {
+            padding-bottom: 5px;
+        }
+    }
 }
 
 .nasi {
@@ -144,51 +147,67 @@ small {
     margin-top: 50px;
 }
 
-
-
-/* ここからplayedgamelist */
-
-.playedgamelist-main {
-    margin: auto;
-    padding-top: 20px;
-}
-
-.playedgamelist-main p {
-    font-size: 14px;
-}
-
-.playedgamelist-title,.gTitle-h1 {
+/* Gtitlerule */
+@mixin gtitlerule {
     text-align: center;
     padding-bottom: 8px;
     border-bottom: 3px solid orange;
 }
 
-.playgamelist-flex {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 30px;
-    margin: auto;
+.gTitle-h1 {
+    @include gtitlerule();
 }
 
-.playedgamelist-entrylist {
-    font-weight: bold;
-    max-width: 800px;
-    padding-left: 5px;
+
+/* ここからplayedgamelist */
+
+.playedgamelist {
+    &-main {
+        margin: auto;
+        padding-top: 20px;
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    &-title {
+        @include gtitlerule();
+    }
+
+    &-flex {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 30px;
+        margin: auto;
+
+        &_iframe iframe {
+            padding-left: 10px;
+            height: 100%;
+            /* border: #000 solid 1px; */
+        }
+    }
+
+    &-entrylist {
+        font-weight: bold;
+        max-width: 800px;
+        padding-left: 5px;
+
+        p {
+            font-weight: normal;
+        }
+    }
 }
 
-.playgamelist-flex_iframe iframe {
-    padding-left: 10px;
-    height: 100%;
-    /* border: #000 solid 1px; */
-}
+.listTable {
+    &-links {
+        padding-left: 20px;
+        padding-bottom: 5px;
+    }
 
-.playedgamelist-entrylist p {
-    font-weight: normal;
-}
-
-.listTable-links {
-    padding-left: 20px;
-    padding-bottom: 5px;
+    &-remarks {
+        display: inline;
+    }
 }
 
 .youlink a:hover {
@@ -201,10 +220,6 @@ small {
 
 .Detailink a:hover {
     color: orange;
-}
-
-.listTable-remarks {
-    display: inline;
 }
 
 /* pcSpec */

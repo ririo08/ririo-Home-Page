@@ -148,6 +148,13 @@ small {
   margin-top: 50px;
 }
 
+/* Gtitlerule */
+.gTitle-h1 {
+  text-align: center;
+  padding-bottom: 8px;
+  border-bottom: 3px solid orange;
+}
+
 /* ここからplayedgamelist */
 .playedgamelist-main {
   margin: auto;
@@ -158,13 +165,13 @@ small {
   font-size: 14px;
 }
 
-.playedgamelist-title, .gTitle-h1 {
+.playedgamelist-title {
   text-align: center;
   padding-bottom: 8px;
   border-bottom: 3px solid orange;
 }
 
-.playgamelist-flex {
+.playedgamelist-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -174,16 +181,16 @@ small {
   margin: auto;
 }
 
+.playedgamelist-flex_iframe iframe {
+  padding-left: 10px;
+  height: 100%;
+  /* border: #000 solid 1px; */
+}
+
 .playedgamelist-entrylist {
   font-weight: bold;
   max-width: 800px;
   padding-left: 5px;
-}
-
-.playgamelist-flex_iframe iframe {
-  padding-left: 10px;
-  height: 100%;
-  /* border: #000 solid 1px; */
 }
 
 .playedgamelist-entrylist p {
@@ -193,6 +200,10 @@ small {
 .listTable-links {
   padding-left: 20px;
   padding-bottom: 5px;
+}
+
+.listTable-remarks {
+  display: inline;
 }
 
 .youlink a:hover {
@@ -205,10 +216,6 @@ small {
 
 .Detailink a:hover {
   color: orange;
-}
-
-.listTable-remarks {
-  display: inline;
 }
 
 /* pcSpec */
