@@ -288,3 +288,7 @@ small {
 .amazlet-detail {
   font-size: 14px;
 }
+
+.amazlet-link a {
+  color: #915500;
+}
