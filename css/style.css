@@ -39,7 +39,7 @@ header {
   font-size: 20px;
 }
 
-nav ul {
+.gnav-ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -52,8 +52,19 @@ nav ul {
   padding-left: 0;
 }
 
-nav ul li + li {
+.gnav-ul_li {
+  padding-bottom: 5px;
+  border-bottom: 2px solid orange;
+}
+
+.gnav-ul_li + .gnav-ul_li {
   margin-left: 20px;
+}
+
+.gnav-SP {
+  width: 80%;
+  margin: auto;
+  display: none;
 }
 
 .accessCounterBox {
@@ -139,12 +150,13 @@ main {
 
 /* ここからFooter */
 footer {
-  width: 100px;
-  margin: auto;
+  width: 100%;
 }
 
 small {
+  width: 100px;
   display: block;
+  margin: auto;
   margin-top: 50px;
 }
 
@@ -291,4 +303,44 @@ small {
 
 .amazlet-link a {
   color: #915500;
+}
+
+/* ここからprofile */
+.profile-img {
+  width: 80%;
+  margin: auto;
+  height: 300px;
+  background-image: url(../img/topimage.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.profile-details_h1 {
+  text-align: center;
+  padding-bottom: 8px;
+  border-bottom: 3px solid orange;
+}
+
+.profile-details_p {
+  font-size: 14px;
+  padding: 0 5px;
+}
+
+.profile-links {
+  padding-top: 20px;
+}
+
+.profile-links_h2 {
+  font-size: 20px;
+}
+
+.profile-links ul li {
+  padding-bottom: 8px;
+}
+
+.profile-links ul li a {
+  margin-right: 1rem;
 }

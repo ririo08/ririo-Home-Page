@@ -36,10 +36,11 @@
             <p　class="accessCounterTarget">あなたは<span id="accessCounterTarget">1億</span>人目の訪問者です。</p>
         </div>
         <script src="./javascript/accessCounter.js"></script>
-        <nav>
-            <ul>
-                <li><a id="randomurl" href="https://www.twitch.tv/ririo08/" target="_blank">どこかへ飛ぶページ</a></li>
-                <li><a href="./pcSpec">PCスペックのページ</a></li>
+        <nav class="gnav gnav-PC">
+            <ul class="gnav-ul">
+                <li class="gnav-ul_li"><a id="randomurl" href="https://www.twitch.tv/ririo08/" target="_blank">どこかへ飛ぶページ</a></li>
+                <li class="gnav-ul_li"><a href="./pcSpec">PCスペックのページ</a></li>
+                <li class="gnav-ul_li"><a href="./streamGameList">配信アーカイブリスト</a></li>
             </ul>
         </nav>
     </header>
@@ -54,16 +55,14 @@
             <div class="mainflex2">
                 <div class="section">
                     <div class="mainHead">
-                        <h2>&nabla;&nbsp;現在プレイ中</h2>
+                        <h2>&nabla;&nbsp;現在更新中</h2>
                     </div>
                     <div class="playtitle">
                         <dl>
-                            <dt>Splatoon2</dt>
-                            <dd><a href="https://www.twitch.tv/collections/Pm83WL2SURXYpg" target="_blank">Twitch</a><a href="https://www.youtube.com/playlist?list=PL_KrJ2Q-UZsE4AkkPQajlU7l51FiJkVpg" target="_blank">YouTube</a></dd>
-                            <dt>Monster Hunter World</dt>
-                            <dd><a href="https://www.twitch.tv/collections/gj_l5WaIlxU0KA" target="_blank">Twitch</a><a class="nasi" href="#">YouTube</a></dd>
-                            <dt>大神 絶景版</dt>
-                            <dd><a href="https://www.twitch.tv/collections/hec1_8xduxU2iA" target="_blank">Twitch</a><a class="nasi" href="#">YouTube</a></dd>
+                            <dt>Splatoon2 ヒーローモード</dt>
+                            <dd><a href="https://www.youtube.com/watch?v=VBX9qzKnSTo&list=PL_KrJ2Q-UZsHLV_5F6dzQnjUh_gRqTLaA" target="_blank">YouTube Playlist</a></dd>
+                            <dt>Undertale Pルート</dt>
+                            <dd><a href="https://www.youtube.com/watch?v=fYOeVg6YB_c&list=PL_KrJ2Q-UZsFh0b2vc5gHrY28WtFlRnVQ">YouTube Playlist</a></dd>
                         </dl>
                     </div>
                 </div>
@@ -81,14 +80,22 @@
                 </div>
                 <div class="section">
                     <div class="mainHead">
-                        <h2>&nabla;&nbsp;配信アーカイブリスト</h2>
+                        <h2>&nabla;&nbsp;プロフィール</h2>
                     </div>
-                    <p class="wasplayedTitle"><a href="./streamGameList">詳しくはこちらをチェック</a></p>
+                    <p class="wasplayedTitle"><a href="./profile/index.html">詳しくはこちらをチェック</a></p>
                 </div>
             </div>
         </div>
     </main>
     <footer>
+        <nav class="gnav gnav-SP">
+            <ul class="gnav-ul">
+                <li class="gnav-ul_li"><a id="randomurl" href="https://www.twitch.tv/ririo08/"
+                        target="_blank">どこかへ飛ぶページ</a></li>
+                <li class="gnav-ul_li"><a href="./pcSpec">PCスペックのページ</a></li>
+                <li class="gnav-ul_li"><a href="./streamGameList">配信アーカイブリスト</a></li>
+            </ul>
+        </nav>
         <small>@リリオ 2019</small>
     </footer>
     <script src="./javascript/randomurl.js"></script>
