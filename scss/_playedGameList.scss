@@ -1,0 +1,62 @@
+/* ここからplayedgamelist */
+
+.playedgamelist {
+    &-main {
+        margin: auto;
+        padding-top: 20px;
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    &-title {
+        @include gtitlerule();
+    }
+
+    &-flex {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 30px;
+        margin: auto;
+
+        &_iframe iframe {
+            padding-left: 10px;
+            height: 100%;
+            /* border: #000 solid 1px; */
+        }
+    }
+
+    &-entrylist {
+        font-weight: bold;
+        max-width: 800px;
+        padding-left: 5px;
+
+        p {
+            font-weight: normal;
+        }
+    }
+}
+
+.listTable {
+    &-links {
+        padding-left: 20px;
+        padding-bottom: 5px;
+    }
+
+    &-remarks {
+        display: inline;
+    }
+}
+
+.youlink a:hover {
+    color: #FF0000;
+}
+
+.twilink a:hover {
+    color: #6441A4;
+}
+
+.Detailink a:hover {
+    color: $themeColor;
+}
