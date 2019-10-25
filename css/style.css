@@ -214,6 +214,10 @@ small {
   padding-bottom: 5px;
 }
 
+.listTable-links a {
+  margin-left: 0.5rem;
+}
+
 .listTable-remarks {
   display: inline;
 }
