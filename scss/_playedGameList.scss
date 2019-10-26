@@ -40,8 +40,9 @@
 
 .listTable {
     &-links {
+        display: block;
         padding-left: 20px;
-        padding-bottom: 5px;
+        margin-bottom: 1.5rem;
         a {
             margin-left: 0.5rem;
         }

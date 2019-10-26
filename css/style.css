@@ -210,8 +210,9 @@ small {
 }
 
 .listTable-links {
+  display: block;
   padding-left: 20px;
-  padding-bottom: 5px;
+  margin-bottom: 1.5rem;
 }
 
 .listTable-links a {
@@ -347,4 +348,15 @@ small {
 
 .profile-links ul li a {
   margin-right: 1rem;
+}
+
+.letsPlayList-jstarget {
+  font-weight: bold;
+  color: red;
+}
+
+.updating::after {
+  content: "更新中!";
+  font-size: 0.5rem;
+  color: red;
 }

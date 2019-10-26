@@ -1,0 +1,12 @@
+.letsPlayList {
+    &-jstarget {
+        font-weight: bold;
+        color: red;
+    }
+}
+
+.updating::after {
+    content: "更新中!";
+    font-size: 0.5rem;
+    color: red;
+}
