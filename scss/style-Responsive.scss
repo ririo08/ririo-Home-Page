@@ -69,7 +69,9 @@ $themeColor: orange;
     }
 
     .zisaku {
-        left: 70px;
+        &-img {
+            left: 70px;
+        }
     }
 
     .mainflex2 {

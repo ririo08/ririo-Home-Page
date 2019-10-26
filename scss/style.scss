@@ -10,8 +10,7 @@ body {
 
 header {
     margin: auto;
-    max-width: 500px;
-    position: relative;
+    max-width: 100%;
     z-index: 10000;
 }
 
@@ -29,17 +28,23 @@ header {
 }
 
 .zisaku {
-    display: block;
-    width: 76px;
-    height: 56px;
-    background-image: url(../img/hukidasi.png);
-    text-align: center;
-    line-height: 2.7;
-    position: absolute;
-    top: 5px;
-    left: 165px;
-    font-size: 20px;
-}
+    margin: auto;
+    max-width: 500px;
+    position: relative;
+    z-index: 10000;
+    &-img {
+        display: block;
+        width: 76px;
+        height: 56px;
+        background-image: url(../img/hukidasi.png);
+        text-align: center;
+        line-height: 2.7;
+        position: absolute;
+        top: 5px;
+        left: 165px;
+        font-size: 20px;
+    }
+} 
 
 .gnav {
     &-ul {
