@@ -366,3 +366,27 @@ small {
   font-size: 0.5rem;
   color: red;
 }
+
+.history-details_h1 {
+  text-align: center;
+  padding-bottom: 8px;
+  border-bottom: 3px solid orange;
+}
+
+.historyList {
+  margin-top: 4rem;
+}
+
+.historyList-ul {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.historyList-li {
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+
+.historyList-li_date {
+  margin-right: 1rem;
+}
