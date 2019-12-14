@@ -3,6 +3,10 @@ $themeColor: orange;
 
 @media screen and (max-width: 900px) {
 
+    .mainMovieSection-wrapper {
+        width: 100%;
+    }
+
     .playedgamelist-flex_iframe {
         width: 100%;
     }

@@ -84,6 +84,38 @@ main {
   z-index: 10000;
 }
 
+.mainMovieSection {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.mainMovieSection-h2 {
+  font-size: 20px;
+  color: orange;
+  text-align: center;
+  font-weight: bold;
+}
+
+.mainMovieSection-wrapper {
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+
+.mainMovieSection-wrapper:before {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+}
+
+.mainMovieSection-wrapper_youTube {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .mainflex {
   display: -webkit-box;
   display: -ms-flexbox;
