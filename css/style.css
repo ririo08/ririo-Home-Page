@@ -388,7 +388,7 @@ small {
   margin-right: 1rem;
 }
 
-.letsPlayList-jstarget {
+.letsPlayList-jstarget, .playedgamelist-jstarget {
   font-weight: bold;
   color: red;
 }
