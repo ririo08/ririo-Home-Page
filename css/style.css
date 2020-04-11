@@ -422,3 +422,7 @@ small {
 .historyList-li_date {
   margin-right: 1rem;
 }
+
+.historyRed {
+  color: #a80000;
+}
