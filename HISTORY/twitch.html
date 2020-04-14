@@ -48,7 +48,22 @@
     <main class="history">
         <div class="history-details">
             <h1 class="history-details_h1">Twitch Ririo08's HISTORY</h2>
-                <p class="history-details_p">Twitchでの活躍の記録です！現在3年目！</p>
+                <p class="history-details_p">Twitchでの活躍の記録です！現在
+                    <script type="text/javascript">
+                        var n = Date.parse("2017/03/25");
+                        var m = new Date();
+                        var x = (m - n) / 1000 / 60 / 60 / 24;
+                        x = Math.floor(x);
+                        y = x / 365;
+                        document.write(x);
+                    </script>
+                    日目（
+                    <script type="text/javascript">
+                        var y = Math.round(x / 365) * 1 +1;
+                        document.write(y);
+                    </script>
+                    年目）！
+                </p>
         </div>
 
         <div class="historyList">
