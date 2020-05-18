@@ -1,5 +1,5 @@
-// fetch('https://ririo08.github.io/ririo-Home-Page/header.html')
-fetch('http://127.0.0.1:5500/header.html')
+fetch('https://ririo08.github.io/ririo-Home-Page/header.html')
+// fetch('http://127.0.0.1:5500/header.html')
     .then(response => response.text())
     .then(function (body) {
         document.querySelector('#header').innerHTML = body;
