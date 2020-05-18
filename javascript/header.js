@@ -29,4 +29,13 @@ fetch('http://127.0.0.1:5500/header.html')
         }
         targetURL.addEventListener("click", changeURL);
         console.log("fetch header done");
+
+        const buttonTarget1 = document.querySelector(".gnav-button");
+        const buttonTarget2 = document.querySelector(".gnav-ul");
+        // const menuButton = 
+        function toggleMenu() {
+            buttonTarget1.classList.toggle("gnav-button_on");
+            buttonTarget2.classList.toggle("gnav-ul_on");
+        }
+        document.getElementById("menuButton").addEventListener("click",toggleMenu);
     });

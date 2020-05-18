@@ -30,7 +30,7 @@ header {
   margin: auto;
   max-width: 500px;
   position: relative;
-  z-index: 10000;
+  z-index: 5;
 }
 
 .zisaku-img {
@@ -46,11 +46,42 @@ header {
   font-size: 20px;
 }
 
+@-webkit-keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.gnav {
+  position: fixed;
+  z-index: 10;
+}
+
 .gnav-button {
   position: fixed;
   top: 0;
   left: 0;
+  width: 40px;
   height: 100%;
+  background-color: #fff;
+  z-index: 10;
+  border-right: solid 1px orange;
+  -webkit-box-shadow: -4px 0 10px 0 black;
+          box-shadow: -4px 0 10px 0 black;
+  -webkit-transition: all 300ms 0s ease;
+  transition: all 300ms 0s ease;
 }
 
 .gnav-button_link {
@@ -59,8 +90,6 @@ header {
   height: 100%;
   color: orange;
   border-right: solid 1px orange;
-  -webkit-box-shadow: -4px 0 10px 0 black;
-          box-shadow: -4px 0 10px 0 black;
 }
 
 .gnav-button_link:hover {
@@ -74,26 +103,30 @@ header {
   width: 15px;
 }
 
+.gnav-button_on {
+  width: 350px;
+}
+
 .gnav-ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: none;
+  position: fixed;
+  top: 50px;
+  left: 50px;
   list-style: none;
   padding-left: 0;
+  width: 300px;
+  padding-right: 10px;
+}
+
+.gnav-ul_on {
+  display: block;
+  -webkit-animation: show .5s linear 0s;
+          animation: show .5s linear 0s;
 }
 
 .gnav-ul_li {
-  padding-bottom: 5px;
+  padding-top: 20px;
   border-bottom: 2px solid orange;
-}
-
-.gnav-ul_li + .gnav-ul_li {
-  margin-left: 20px;
 }
 
 .gnav-SP {
