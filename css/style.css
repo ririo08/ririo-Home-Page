@@ -4,6 +4,7 @@ body {
   max-width: 1000px;
   font-family: 'Noto Sans JP', sans-serif;
   -webkit-text-size-adjust: 100％;
+  position: relative;
 }
 
 header {
@@ -43,6 +44,34 @@ header {
   top: 5px;
   left: 165px;
   font-size: 20px;
+}
+
+.gnav-button {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.gnav-button_link {
+  display: block;
+  width: 40px;
+  height: 100%;
+  color: orange;
+  border-right: solid 1px orange;
+  -webkit-box-shadow: -4px 0 10px 0 black;
+          box-shadow: -4px 0 10px 0 black;
+}
+
+.gnav-button_link:hover {
+  color: orange;
+}
+
+.gnav-button_image {
+  display: block;
+  margin: auto;
+  padding-top: 30px;
+  width: 15px;
 }
 
 .gnav-ul {

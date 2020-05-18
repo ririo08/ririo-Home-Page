@@ -6,6 +6,7 @@ body {
     max-width: 1000px;
     font-family: 'Noto Sans JP', sans-serif;
     -webkit-text-size-adjust: 100％;
+    position: relative;
 }
 
 header {
@@ -47,6 +48,29 @@ header {
 } 
 
 .gnav {
+    &-button {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        &_link {
+            display: block;
+            width: 40px;
+            height: 100%;
+            color: $themeColor;
+            border-right: solid 1px $themeColor;
+            box-shadow: -4px 0 10px 0 black;
+            &:hover {
+                color: $themeColor;
+            }
+        }
+        &_image {
+            display: block;
+            margin: auto;
+            padding-top: 30px;
+            width: 15px;
+        }
+    }
     &-ul {
         display: flex;
         justify-content: center;
