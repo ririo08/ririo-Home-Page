@@ -1,4 +1,15 @@
 @media screen and (max-width: 900px) {
+  .gnav-button {
+    height: 120px;
+    border-bottom: solid 1px orange;
+  }
+  .gnav-button_image {
+    padding-top: 40px;
+  }
+  .gnav-button_on {
+    width: 350px;
+    height: 100%;
+  }
   .mainMovieSection-wrapper {
     width: 100%;
   }
@@ -12,23 +23,11 @@
 }
 
 @media screen and (max-width: 768px) {
-  .gnav {
-    text-align: center;
-  }
-  .gnav-ul {
-    display: block;
-  }
   .gnav-ul_li {
     padding-top: 10px;
   }
   .gnav-ul_li + .gnav-ul_li {
     margin-left: 0;
-  }
-  .gnav-PC {
-    display: none;
-  }
-  .gnav-SP {
-    display: block;
   }
   .mainflex1 {
     margin-bottom: 100px;
