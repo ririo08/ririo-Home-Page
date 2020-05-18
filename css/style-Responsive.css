@@ -23,12 +23,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .gnav-ul_li {
-    padding-top: 10px;
-  }
-  .gnav-ul_li + .gnav-ul_li {
-    margin-left: 0;
-  }
   .mainflex1 {
     margin-bottom: 100px;
   }

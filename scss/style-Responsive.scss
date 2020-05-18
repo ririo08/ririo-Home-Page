@@ -32,17 +32,6 @@ $themeColor: orange;
 }
 
 @media screen and (max-width: 768px) {
-    .gnav {
-        &-ul {
-            &_li {
-                padding-top: 10px;
-            }
-
-            &_li+&_li {
-                margin-left: 0;
-            }
-        }
-    }
 
     .mainflex1 {
         margin-bottom: 100px;

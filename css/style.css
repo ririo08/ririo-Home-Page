@@ -124,6 +124,12 @@ header {
           animation: show .5s linear 0s;
 }
 
+.gnav-ul_title {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
 .gnav-ul_li {
   padding-top: 20px;
   border-bottom: 2px solid orange;
