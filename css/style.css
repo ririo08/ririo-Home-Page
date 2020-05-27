@@ -385,6 +385,22 @@ small {
   margin-bottom: 50px;
 }
 
+.amazlet-image {
+  width: 160px;
+  height: 160px;
+}
+
+.amazlet-image a {
+  display: block;
+  margin: auto;
+}
+
+.amazlet-image a img {
+  display: block;
+  max-width: 100%;
+  margin: auto;
+}
+
 .amazlet-info {
   padding-left: 20px;
 }

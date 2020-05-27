@@ -46,6 +46,20 @@ $amazletLinks : #915500;
         margin-bottom: 50px;
     }
 
+    &-image {
+        width: 160px;
+        height: 160px;
+        & a {
+            display: block;
+            margin: auto;
+            & img {
+                display: block;
+                max-width: 100%;
+                margin: auto;
+            }
+        } 
+    }
+
     &-info {
         padding-left: 20px;
     }
