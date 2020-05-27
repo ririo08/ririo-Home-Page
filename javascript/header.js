@@ -32,10 +32,15 @@ fetch('https://ririo08.github.io/ririo-Home-Page/header.html')
 
         const buttonTarget1 = document.querySelector(".gnav-button");
         const buttonTarget2 = document.querySelector(".gnav-ul");
-        // const menuButton = 
+
         function toggleMenu() {
             buttonTarget1.classList.toggle("gnav-button_on");
             buttonTarget2.classList.toggle("gnav-ul_on");
         }
         document.getElementById("menuButton").addEventListener("click",toggleMenu);
+        // over 1650px opened menu.js
+        if (window.outerWidth >= 1650) {
+            toggleMenu();
+            console.log("done");
+        };
     });
