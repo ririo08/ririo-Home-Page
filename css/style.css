@@ -205,6 +205,30 @@ main {
   font-weight: bold;
 }
 
+.mainHead-twitchBox {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px;
+}
+
+.mainHead-twitchBox img {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+
+.mainHead-twitchBox_title {
+  font-size: 40px;
+  margin-top: 3px;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
 .playtitle {
   padding-left: 20px;
 }
@@ -234,14 +258,6 @@ main {
 
 .playtitle dd a {
   padding-left: 10px;
-}
-
-.futuretitle ul {
-  padding-top: 20px;
-}
-
-.futuretitle ul li {
-  padding-bottom: 5px;
 }
 
 .nasi {
