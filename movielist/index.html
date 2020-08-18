@@ -22,20 +22,26 @@
 </head>
 
 <body>
+    <div class="grayscreen" id="grayscreen"></div>
     <header id="header">
         <script src="../javascript/header.js"></script>
     </header>
     <main>
-        <div class="playedgamelist-main">
-            <h2 class="playedgamelist-title">配信アーカイブリスト</h2>
+        <div class="movielist-iframeContainer" id="iframeContainer">
+            <div class="movielist-iframeBox">
+                <iframe class="movielist-iframeBox_content" id="iframe" src="" frameborder="0" name="piframe" width="600px"></iframe>
+            </div>
+        </div>
+        <div class="movielist-main">
+            <h2 class="movielist-title">配信アーカイブリスト</h2>
             <p>ここでは今までにプレイしたゲームのリンク等を貼っていきます。<br>
             基本的にここでは配信のアーカイブを表示しています。<br>
             配信が残ってない（公開していないものも含む）、かつ編集した動画がある場合はそちらを表示しています。<br>
             P.S.Twitchに残ってないものもあります。てかそっちのほうが多いです。逆もまた然り。<br>
-            現在<span class="playedgamelist-jstarget" id="playedgamelist-jstarget"></span>シリーズを配信中！</p>
+            現在<span class="movielist-jstarget" id="movielist-jstarget"></span>シリーズを配信中！</p>
         </div>
-        <div class="playedgamelist-flex">
-            <div class="playedgamelist-entrylist">
+        <div class="movielist-flex">
+            <div class="movielist-entrylist">
                 <p>0-1 A-Z あ-ん順で並べています。</p>
 
             <dt class="listTable-title">Watching Stream video</dt>
@@ -124,13 +130,11 @@
                         <dd class="listTable-links"><a href="" target="_blank">Twitch</a></dd>
                 .-->
             </div>
-            <div class="playedgamelist-flex_iframe">
-                <iframe id="iframe" src="" frameborder="0" name="piframe" width="600px"></iframe>
-            </div>
         </div>
     </main>
     <script src="../javascript/streamgamelist-iframe.js"></script>
     <script src="../javascript/streamGameList-titlecount.js"></script>
+    <script src="../javascript/iframe.js"></script>
     <footer>
         <small>@リリオ 2019</small>
     </footer>

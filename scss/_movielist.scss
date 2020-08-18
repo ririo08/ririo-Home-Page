@@ -1,6 +1,41 @@
 /* ここからplayedgamelist */
 
-.playedgamelist {
+.grayscreen {
+    position: absolute;
+    inline-size: 100%;
+    block-size: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: 10;
+    display: none;
+    &-active {
+        display: block;
+    }
+}
+
+.movielist {
+
+    &-iframeContainer {
+        display: none;
+        position: absolute;
+        background-color: green;
+        inline-size: 100%;
+        max-block-size: 100%;
+        z-index: 11;
+        &_active {
+            display: block;
+        }
+    }
+
+    &-iframeBox {
+        inline-size: 100%;
+        &_content {
+            inline-size: 100%;
+            block-size: 80vh;
+        }
+        outline: 1px solid red;
+    }
+
     &-main {
         margin: auto;
         padding-top: 20px;
@@ -19,12 +54,6 @@
         flex-wrap: wrap;
         padding-top: 30px;
         margin: auto;
-
-        &_iframe iframe {
-            padding-left: 10px;
-            height: 100%;
-            /* border: #000 solid 1px; */
-        }
     }
 
     &-entrylist {
@@ -38,7 +67,8 @@
     }
 
     &-jstarget {
-        @extend .letsPlayList-jstarget;
+        font-weight: bold;
+        color: red;
     }
 }
 
