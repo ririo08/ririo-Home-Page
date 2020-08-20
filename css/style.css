@@ -71,7 +71,7 @@ header {
 
 .gnav-button {
   position: fixed;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 40px;
   height: 100%;
@@ -284,13 +284,29 @@ small {
 }
 
 /* ここからplayedgamelist */
+.body {
+  max-width: 100% !important;
+}
+
+.body-active {
+  background-color: #808080;
+}
+
+.movielistContainer {
+  -webkit-margin-start: auto;
+          margin-inline-start: auto;
+  -webkit-margin-end: auto;
+          margin-inline-end: auto;
+  max-inline-size: 1000px;
+}
+
 .grayscreen {
   position: absolute;
   inline-size: 100%;
   block-size: 100%;
   background-color: #000;
   opacity: 0.5;
-  z-index: 10;
+  z-index: 8;
   display: none;
 }
 
@@ -301,10 +317,14 @@ small {
 .movielist-iframeContainer {
   display: none;
   position: absolute;
-  background-color: green;
+  background-color: white;
   inline-size: 100%;
+  max-inline-size: 1000px;
   max-block-size: 100%;
-  z-index: 11;
+  z-index: 9;
+  padding: 10px;
+  -webkit-box-shadow: 6px 6px 5px -5px black;
+          box-shadow: 6px 6px 5px -5px black;
 }
 
 .movielist-iframeContainer_active {
@@ -313,7 +333,6 @@ small {
 
 .movielist-iframeBox {
   inline-size: 100%;
-  outline: 1px solid red;
 }
 
 .movielist-iframeBox_content {

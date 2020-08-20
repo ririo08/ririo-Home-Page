@@ -21,122 +21,125 @@
     </script>
 </head>
 
-<body>
+<body id="body" class="body">
     <div class="grayscreen" id="grayscreen"></div>
-    <header id="header">
-        <script src="../javascript/header.js"></script>
-    </header>
-    <main>
-        <div class="movielist-iframeContainer" id="iframeContainer">
-            <div class="movielist-iframeBox">
-                <iframe class="movielist-iframeBox_content" id="iframe" src="" frameborder="0" name="piframe" width="600px"></iframe>
+    <div class="movielistContainer">
+        <header id="header">
+            <script src="../javascript/header.js"></script>
+        </header>
+        <main>
+            <div class="movielist-iframeContainer" id="iframeContainer">
+                <div class="movielist-iframeBox">
+                    <iframe class="movielist-iframeBox_content" id="iframe" src="" frameborder="0" name="piframe" width="600px"></iframe>
+                </div>
             </div>
-        </div>
-        <div class="movielist-main">
-            <h2 class="movielist-title">配信アーカイブリスト</h2>
-            <p>ここでは今までにプレイしたゲームのリンク等を貼っていきます。<br>
-            基本的にここでは配信のアーカイブを表示しています。<br>
-            配信が残ってない（公開していないものも含む）、かつ編集した動画がある場合はそちらを表示しています。<br>
-            P.S.Twitchに残ってないものもあります。てかそっちのほうが多いです。逆もまた然り。<br>
-            現在<span class="movielist-jstarget" id="movielist-jstarget"></span>シリーズを配信中！</p>
-        </div>
-        <div class="movielist-flex">
-            <div class="movielist-entrylist">
-                <p>0-1 A-Z あ-ん順で並べています。</p>
-
-            <dt class="listTable-title">Watching Stream video</dt>
-            <dd class="listTable-links Detailink"><a href="./detail/WatchStreamVideos.html" target="piframe">Detail</a></dd>
-
-            <dt class="listTable-title">Black Desert Online(黒い砂漠)</dt>
-            <dd class="listTable-links Detailink"><a href="./detail/BlackDesertOnline.html" target="piframe">Detail</a></dd>
-
-            <dt class="listTable-title">Deltarune</dt>
-            <dd class="listTable-links Detailink"><a href="./detail/Deltarune.html" target="piframe">Detail</a></dd>
-
-            <dt class="listTable-title">Death Stranding</dt>
-            <dd class="listTable-links twilink"><a href="https://www.twitch.tv/collections/BzRiIyIv8RV3Bw" target="_blank">Twitch</a></dd>
-
-            <dt class="listTable-title">Destiny Child</dt>
-            <dd class="listTable-links Detailink"><a href="./detail/DestinyChild.html" target="piframe">Detail</a></dd>
-
-            <dt class="listTable-title">FINAL FANTASY XV WINDOWS EDITION</dt>
-            <dd class="listTable-links Detailink"><a href="./detail/FinalFantasy15.html" target="piframe">Detail</a></dd>
-
-            <dt class="listTable-title">Half-Life</dt>
-            <dd class="listTable-links Detailink"><a href="./detail/HalfLife.html" target="piframe">Detail</a></dd>
-
-            <dt class="listTable-title updating">Half-Life 2</dt>
-            <dd class="listTable-links Detailink"><a href="./detail/HalfLife2.html" target="piframe">Detail</a></dd>
-
-            <dt class="listTable-title">Minecraft Multi</dt>
-            <dd class="listTable-links twilink"><a href="https://www.twitch.tv/collections/Dl79oVFFcBWJbw" target="_blank">Twitch</a></dd>
-
-            <dt class="listTable-title">Monster Hunter World</dt>
-            <dd class="listTable-links Detailink"><a href="./detail/MonsterHunterWorld.html" target="piframe">Detail</a></dd>
-
-            <dt class="listTable-title">RUINER</dt>
-            <dd class="listTable-links Detailink"><a href="./detail/Ruiner.html" target="piframe">Detail</a></dd>
-
-            <dt class="listTable-title">PLAYERUNKNOWN'S BATTLEGROUNDS</dt>
-            <dd class="listTable-links youlink"><a href="https://www.youtube.com/watch?v=GS0zZu-wJJ8&list=PLwQLZEoAUfGh_axjRaK_oHA8ykHox10Az" target="_blank">YouTube</a></dd>
-
-            <dt class="listTable-title">Stardew Valley</dt>
-            <dd class="listTable-links twilink"><a href="https://www.twitch.tv/collections/kKUEGUqjUBVSzg" target="_blank">Twitch</a></dd>
-
-            <dt class="listTable-title">Splatoon2</dt>
-            <dd class="listTable-links twilink"><a href="https://www.twitch.tv/collections/Pm83WL2SURXYpg" target="_blank">Twitch</a></dd>
-
-            <dt class="listTable-title">Terraria</dt>
-            <dd class="listTable-links twilink"><a href="https://www.twitch.tv/collections/Um5FEzqvYxVZqA" target="_blank">Twitch</a></dd>
-
-            <dt class="listTable-title">Undertale</dt>
-            <dd class="listTable-links youlink"><a href="https://www.youtube.com/watch?v=D5ZE0NUxk6M&list=PLwQLZEoAUfGhe9qIBO8mcGjmYcL_kHFpY" target="_blank">YouTube</a></dd>
-
-            <dt class="listTable-title">大神 絶景版</dt>
-            <dd class="listTable-links Detailink"><a href="./detail/Okami.html" target="piframe">Detail</a></dd>
-
-            <dt class="listTable-title">ゼルダの伝説 ブレスオブザワイルド</dt>
-            <dd class="listTable-links youlink"><a href="https://www.youtube.com/watch?v=FBwdviAUbKw&list=PLwQLZEoAUfGhWAa8ktIyOjzjBguAp7AWQ" target="_blank">YouTube</a></dd>
-
-            <dt class="listTable-title">ゼルダの伝説 夢をみる島</dt>
-            <dd class="listTable-links Detailink"><a href="./detail/TheLegendofZelda-LinksAwaking.html" target="piframe">Detail</a></dd>
-
-            <dt class="listTable-title">太鼓の達人 Nintendo Switchば～じょん！</dt>
-            <dd class="listTable-links twilink"><a href="https://www.twitch.tv/videos/287722705" target="_blank">Twitch</a></dd>
-
-            <dt class="listTable-title">大乱闘スマッシュブラザーズ Special</dt>
-            <dd class="listTable-links twilink"><a href="https://www.twitch.tv/collections/42wmZ6AgbhXagw" target="_blank">Twitch</a></dd>
-            
-            <dt class="listTable-title">あつまれ どうぶつの森</dt>
-            <dd class="listTable-links"><a href="./detail/AnimalCrossingNewHorizons.html" target="piframe">Detail</a></dd>
-
-            <dt class="listTable-title">ファイアーエムブレム無双</dt>
-            <dd class="listTable-links twilink"><a href="https://www.twitch.tv/collections/VSuc9Cn76xVdvw" target="_blank">Twitch</a></dd>
-
-            <dt class="listTable-title">ベヨネッタ</dt>
-            <dd class="listTable-links youlink"><a href="https://www.youtube.com/watch?v=eQHa2Z0DBYs&list=PLwQLZEoAUfGjS20Fm91z99j9TgzRZMS97" target="_blank">YouTube</a></dd>
-
-            <dt class="listTable-title">ポケットモンスター Let's Go ピカチュウ</dt>
-            <dd class="listTable-links twilink"><a href="https://www.twitch.tv/collections/FerQB8apZxWfAA" target="_blank">Twitch</a></dd>
-
-            <dt class="listTable-title">ポケットモンスター ソード</dt>
-            <dd class="listTable-links twilink"><a href="https://www.twitch.tv/collections/_LTJTVEw2BWyWA" target="_blank">Twitch</a></dd>
-
-            <dt class="listTable-title">ロックマン11 体験版</dt>
-            <dd class="listTable-links twilink"><a href="https://www.twitch.tv/videos/307038817" target="_blank">Twitch</a></dd>
-
-                <!-- 
-                        <dt class="listTable-title"></dt>
-                        <dd class="listTable-links"><a href="" target="_blank">Twitch</a></dd>
-                .-->
+            <div class="movielist-main">
+                <h2 class="movielist-title">動画リスト</h2>
+                <p>ここでは今までにプレイしたゲームの映像リンク等を貼っていきます。<br>
+                実況は「実況」リンクから（基本的にYouTubeですがまれに例外があります。）<br>
+                配信は「Twitch or YouTube」または「Detail」のリンクから！<br>
+                Detailについて：Twitchでのアーカイブが一部消えてしまったものはYouTubeの方のリンクを貼っているのですが、<br>
+                そうなるとリストで見るものが存在しなく、大変面倒なのでDetailリンクを作成しました。<br>
+                P.S.（2020-08-20）：今後、配信は基本的にYouTubeにアーカイブとして残していきます。なので、今後このリストもYouTubeのリンクのみを貼っていきます。<br>
+                現在<span class="movielist-jstarget" id="movielist-jstarget"></span>シリーズを配信中！</p>
             </div>
-        </div>
-    </main>
-    <script src="../javascript/streamgamelist-iframe.js"></script>
-    <script src="../javascript/streamGameList-titlecount.js"></script>
-    <script src="../javascript/iframe.js"></script>
-    <footer>
-        <small>@リリオ 2019</small>
-    </footer>
+            <div class="movielist-flex">
+                <div class="movielist-entrylist">
+                    <p>0-1 A-Z あ-ん順で並べています。</p>
+
+                <dt class="listTable-title">Watching Stream video</dt>
+                <dd class="listTable-links Detailink"><a href="./detail/WatchStreamVideos.html" target="piframe">Detail</a></dd>
+
+                <dt class="listTable-title">Black Desert Online(黒い砂漠)</dt>
+                <dd class="listTable-links Detailink"><a href="./detail/BlackDesertOnline.html" target="piframe">Detail</a></dd>
+
+                <dt class="listTable-title">Deltarune</dt>
+                <dd class="listTable-links Detailink"><a href="./detail/Deltarune.html" target="piframe">Detail</a></dd>
+
+                <dt class="listTable-title">Death Stranding</dt>
+                <dd class="listTable-links twilink"><a href="https://www.twitch.tv/collections/BzRiIyIv8RV3Bw" target="_blank">Twitch</a></dd>
+
+                <dt class="listTable-title">Destiny Child</dt>
+                <dd class="listTable-links Detailink"><a href="./detail/DestinyChild.html" target="piframe">Detail</a></dd>
+
+                <dt class="listTable-title">FINAL FANTASY XV WINDOWS EDITION</dt>
+                <dd class="listTable-links Detailink"><a href="./detail/FinalFantasy15.html" target="piframe">Detail</a></dd>
+
+                <dt class="listTable-title">Half-Life</dt>
+                <dd class="listTable-links Detailink"><a href="./detail/HalfLife.html" target="piframe">Detail</a></dd>
+
+                <dt class="listTable-title updating">Half-Life 2</dt>
+                <dd class="listTable-links Detailink"><a href="./detail/HalfLife2.html" target="piframe">Detail</a></dd>
+
+                <dt class="listTable-title">Minecraft Multi</dt>
+                <dd class="listTable-links twilink"><a href="https://www.twitch.tv/collections/Dl79oVFFcBWJbw" target="_blank">Twitch</a></dd>
+
+                <dt class="listTable-title">Monster Hunter World</dt>
+                <dd class="listTable-links Detailink"><a href="./detail/MonsterHunterWorld.html" target="piframe">Detail</a></dd>
+
+                <dt class="listTable-title">RUINER</dt>
+                <dd class="listTable-links Detailink"><a href="./detail/Ruiner.html" target="piframe">Detail</a></dd>
+
+                <dt class="listTable-title">PLAYERUNKNOWN'S BATTLEGROUNDS</dt>
+                <dd class="listTable-links youlink"><a href="https://www.youtube.com/watch?v=GS0zZu-wJJ8&list=PLwQLZEoAUfGh_axjRaK_oHA8ykHox10Az" target="_blank">YouTube</a></dd>
+
+                <dt class="listTable-title">Stardew Valley</dt>
+                <dd class="listTable-links twilink"><a href="https://www.twitch.tv/collections/kKUEGUqjUBVSzg" target="_blank">Twitch</a></dd>
+
+                <dt class="listTable-title">Splatoon2</dt>
+                <dd class="listTable-links twilink"><a href="https://www.twitch.tv/collections/Pm83WL2SURXYpg" target="_blank">Twitch</a></dd>
+
+                <dt class="listTable-title">Terraria</dt>
+                <dd class="listTable-links twilink"><a href="https://www.twitch.tv/collections/Um5FEzqvYxVZqA" target="_blank">Twitch</a></dd>
+
+                <dt class="listTable-title">Undertale</dt>
+                <dd class="listTable-links youlink"><a href="https://www.youtube.com/watch?v=D5ZE0NUxk6M&list=PLwQLZEoAUfGhe9qIBO8mcGjmYcL_kHFpY" target="_blank">YouTube</a></dd>
+
+                <dt class="listTable-title">大神 絶景版</dt>
+                <dd class="listTable-links Detailink"><a href="./detail/Okami.html" target="piframe">Detail</a></dd>
+
+                <dt class="listTable-title">ゼルダの伝説 ブレスオブザワイルド</dt>
+                <dd class="listTable-links youlink"><a href="https://www.youtube.com/watch?v=FBwdviAUbKw&list=PLwQLZEoAUfGhWAa8ktIyOjzjBguAp7AWQ" target="_blank">YouTube</a></dd>
+
+                <dt class="listTable-title">ゼルダの伝説 夢をみる島</dt>
+                <dd class="listTable-links Detailink"><a href="./detail/TheLegendofZelda-LinksAwaking.html" target="piframe">Detail</a></dd>
+
+                <dt class="listTable-title">太鼓の達人 Nintendo Switchば～じょん！</dt>
+                <dd class="listTable-links twilink"><a href="https://www.twitch.tv/videos/287722705" target="_blank">Twitch</a></dd>
+
+                <dt class="listTable-title">大乱闘スマッシュブラザーズ Special</dt>
+                <dd class="listTable-links twilink"><a href="https://www.twitch.tv/collections/42wmZ6AgbhXagw" target="_blank">Twitch</a></dd>
+                
+                <dt class="listTable-title">あつまれ どうぶつの森</dt>
+                <dd class="listTable-links Detailink"><a href="./detail/AnimalCrossingNewHorizons.html" target="piframe">Detail</a></dd>
+
+                <dt class="listTable-title">ファイアーエムブレム無双</dt>
+                <dd class="listTable-links twilink"><a href="https://www.twitch.tv/collections/VSuc9Cn76xVdvw" target="_blank">Twitch</a></dd>
+
+                <dt class="listTable-title">ベヨネッタ</dt>
+                <dd class="listTable-links youlink"><a href="https://www.youtube.com/watch?v=eQHa2Z0DBYs&list=PLwQLZEoAUfGjS20Fm91z99j9TgzRZMS97" target="_blank">YouTube</a></dd>
+
+                <dt class="listTable-title">ポケットモンスター Let's Go ピカチュウ</dt>
+                <dd class="listTable-links twilink"><a href="https://www.twitch.tv/collections/FerQB8apZxWfAA" target="_blank">Twitch</a></dd>
+
+                <dt class="listTable-title">ポケットモンスター ソード</dt>
+                <dd class="listTable-links twilink"><a href="https://www.twitch.tv/collections/_LTJTVEw2BWyWA" target="_blank">Twitch</a></dd>
+
+                <dt class="listTable-title">ロックマン11 体験版</dt>
+                <dd class="listTable-links twilink"><a href="https://www.twitch.tv/videos/307038817" target="_blank">Twitch</a></dd>
+
+                    <!-- 
+                            <dt class="listTable-title"></dt>
+                            <dd class="listTable-links"><a href="" target="_blank">Twitch</a></dd>
+                    .-->
+                </div>
+            </div>
+        </main>
+        <script src="../javascript/movielist-titlecount.js"></script>
+        <script src="../javascript/movielist-iframe.js"></script>
+        <footer>
+            <small>@リリオ 2019</small>
+        </footer>
+    </div>
 </body>
 </html>
