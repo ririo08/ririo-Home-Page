@@ -39,7 +39,7 @@ fetch('https://ririo08.github.io/ririo-Home-Page/header.html')
         }
         document.getElementById("menuButton").addEventListener("click",toggleMenu);
         // over 1650px opened menu.js
-        if (window.outerWidth >= 1650) {
+        if (window.innerWidth >= 1700) {
             toggleMenu();
             console.log("done");
         };
