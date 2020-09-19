@@ -1,7 +1,7 @@
 @media screen and (max-width: 900px) {
   .gnav-button {
     height: 120px;
-    border-bottom: solid 1px orange;
+    border-top: solid 1px orange;
   }
   .gnav-button_image {
     padding-top: 40px;

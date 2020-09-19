@@ -6,7 +6,7 @@ $themeColor: orange;
     .gnav {
         &-button {
             height: 120px;
-            border-bottom: solid 1px $themeColor;
+            border-top: solid 1px $themeColor;
             &_image {
                 padding-top: 40px;
             }
