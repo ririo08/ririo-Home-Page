@@ -575,3 +575,35 @@ small {
 .historyRed {
   color: #a80000;
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #181818;
+    color: #f0f0f0;
+  }
+  h1, h2 {
+    color: #f0f0f0;
+  }
+  a {
+    color: #3b99ff;
+  }
+  .zisaku-img {
+    color: #000;
+  }
+  .gnav-button {
+    background-color: #202020;
+  }
+  .toptitle a {
+    color: #f0f0f0;
+  }
+  .playtitle a {
+    color: #3b99ff;
+  }
+  .historyRed {
+    color: #d13434;
+  }
+  .amazlet-name a,
+  .amazlet-link a {
+    color: #cc8d33;
+  }
+}
