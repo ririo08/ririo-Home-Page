@@ -1,4 +1,4 @@
-fetch('https://ririo08.github.io/ririo-Home-Page/header.html')
+fetch('http://ririotv.xyz/header.html')
 // fetch('http://127.0.0.1:5500/header.html')
     .then(response => response.text())
     .then(function (body) {
@@ -18,7 +18,7 @@ fetch('https://ririo08.github.io/ririo-Home-Page/header.html')
 
         // randomURL.js
         var urlArray = [];
-        urlArray = ['https://www.twitch.tv/ririo08/', 'https://www.youtube.com/channel/UC87SI6KnGObjTObcIsNISHA', 'https://twitter.com/ririo08'];
+        urlArray = ['https://www.youtube.com/channel/UC87SI6KnGObjTObcIsNISHA', 'https://twitter.com/ririo08'];
         const targetURL = document.getElementById("randomurl");
         var urlRandNum = Math.floor(Math.random() * 3);
         targetURL.href = urlArray[urlRandNum];
