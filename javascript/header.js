@@ -18,7 +18,7 @@ fetch('http://ririotv.xyz/header.html')
 
         // randomURL.js
         var urlArray = [];
-        urlArray = ['https://www.youtube.com/channel/UC87SI6KnGObjTObcIsNISHA', 'https://twitter.com/ririo08'];
+        urlArray = ['https://www.youtube.com/RirioTV', 'https://twitter.com/ririo08'];
         const targetURL = document.getElementById("randomurl");
         var urlRandNum = Math.floor(Math.random() * 3);
         targetURL.href = urlArray[urlRandNum];
